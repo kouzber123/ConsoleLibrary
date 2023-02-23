@@ -9,8 +9,8 @@ namespace bookLibary.Data.Repositories.InterfaceRepository
     Task<BookDTO> GetById(int id);
     Task<IEnumerable<BookDTO>> GetByAuthorId(int authorId);
 
-    Task<BookDTO> Update(Book book);
-    Task<Book> Delete(int id);
+    Task<BookDTO> Update(int id, BookDTO bookDTO);
+    Task Delete(int id);
 
     Task Add(Book book);
   }

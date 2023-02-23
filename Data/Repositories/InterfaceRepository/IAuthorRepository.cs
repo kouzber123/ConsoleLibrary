@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using bookLibary.Data.DTOs;
 using bookLibary.Models;
 
@@ -13,13 +9,9 @@ namespace bookLibary.Data.Repositories.InterfaceRepository
     //get all
     Task<IEnumerable<AuthorDTO>> GetAll();
     //get by id 
-    Task<AuthorDTO> GetById(int id);
-
-    Task<AuthorDTO> Update(Author author);
+    Task <AuthorDTO> GetById(int id);
+    Task<AuthorDTO> Update(int id, AuthorDTO authorDTO);
     Task Delete(int id);
-
     Task Add(Author author);
-
-
   }
 }
